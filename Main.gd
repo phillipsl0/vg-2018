@@ -18,6 +18,7 @@ func new_game():
 	begin_round()
 
 func begin_round():
+	# test
 	$Scenes.show_scene(scene)
 	
 	$HUD.show_message("Get Ready")
