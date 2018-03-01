@@ -28,6 +28,7 @@ height = 26.0
 
 [node name="Player" type="Area2D"]
 
+position = Vector2( 149.671, 614.438 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0

@@ -1,41 +1,24 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://HUD.gd" type="Script" id=1]
-[ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Normal.gd" type="Script" id=2]
+[ext_resource path="res://DefaultTheme.theme" type="Theme" id=3]
+[ext_resource path="res://HBoxContainer.gd" type="Script" id=4]
+[ext_resource path="res://Quotes.gd" type="Script" id=5]
 
-[sub_resource type="DynamicFontData" id=1]
-
-font_path = "res://fonts/Xolonium-Regular.ttf"
-
-[sub_resource type="DynamicFont" id=2]
-
-size = 72
-use_mipmaps = false
-use_filter = false
-font_data = SubResource( 1 )
-_sections_unfolded = [ "Font", "Settings" ]
-
-[sub_resource type="DynamicFont" id=3]
-
-size = 64
-use_mipmaps = false
-use_filter = false
-font_data = ExtResource( 2 )
-_sections_unfolded = [ "Font", "Settings" ]
-
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="StyleBoxFlat" id=14]
 
 content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-bg_color = Color( 0.383863, 0.379166, 0.980469, 1 )
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
 draw_center = true
 border_width_left = 0
 border_width_top = 0
 border_width_right = 0
 border_width_bottom = 0
-border_color = Color( 0.383863, 0.379166, 0.980469, 1 )
+border_color = Color( 0.8, 0.8, 0.8, 1 )
 border_blend = false
 corner_radius_top_left = 0
 corner_radius_top_right = 0
@@ -51,12 +34,179 @@ shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFontData" id=22]
+
+font_path = "res://fonts/Lato-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=23]
+
+size = 30
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 22 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFontData" id=15]
+
+font_path = "res://fonts/Lato-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=16]
 
 size = 72
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 2 )
+font_data = SubResource( 15 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFontData" id=17]
+
+font_path = "res://fonts/Lato-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=18]
+
+size = 72
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 17 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="StyleBoxFlat" id=19]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.156418, 0.156418, 0.597656, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 8
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+_sections_unfolded = [ "Corner Radius", "Expand Margin" ]
+
+[sub_resource type="StyleBoxFlat" id=20]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.640991, 0.698046, 0.921875, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 8
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+_sections_unfolded = [ "Corner Radius", "Expand Margin" ]
+
+[sub_resource type="StyleBoxFlat" id=8]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.239216, 0.239216, 0.890196, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 8
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+_sections_unfolded = [ "Corner Radius", "Expand Margin" ]
+
+[sub_resource type="DynamicFontData" id=9]
+
+font_path = "res://fonts/Lato-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=10]
+
+size = 72
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 9 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="StyleBoxFlat" id=21]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.538256, 0.395844, 0.851562, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+
+[sub_resource type="DynamicFontData" id=12]
+
+font_path = "res://fonts/Lato-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=13]
+
+size = 26
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 12 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="HUD" type="CanvasLayer"]
@@ -67,47 +217,159 @@ rotation = 0.0
 scale = Vector2( 1, 1 )
 transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
 
-[node name="P1EnergyLabel" type="Label" parent="." index="0"]
+[node name="Normal" type="Panel" parent="." index="0"]
 
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 14 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "custom_styles" ]
+
+[node name="Stats" type="HBoxContainer" parent="Normal" index="0"]
+
+editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
 anchor_bottom = 0.0
-margin_left = -407.0
-margin_top = 633.0
-margin_right = -356.0
-margin_bottom = 720.0
+margin_left = -275.0
+margin_right = 275.0
+margin_bottom = 90.0
+rect_min_size = Vector2( 550, 90 )
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 3 )
+alignment = 0
+script = ExtResource( 4 )
+_sections_unfolded = [ "Rect", "Theme" ]
+
+[node name="Energy" type="Label" parent="Normal/Stats" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 15.0
+margin_right = 150.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 150, 60 )
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-text = "0"
+custom_fonts/font = SubResource( 23 )
+text = "Energy"
+align = 2
+valign = 2
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Hint", "Rect", "Theme", "custom_fonts" ]
+
+[node name="EnergyLabel" type="Label" parent="Normal/Stats" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 154.0
+margin_right = 254.0
+margin_bottom = 90.0
+rect_min_size = Vector2( 100, 90 )
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 16 )
+text = "50"
+align = 2
+valign = 2
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Grow Direction", "Margin", "Material", "Rect", "Size Flags", "Theme", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
 
-[node name="MessageLabel" type="Label" parent="." index="1"]
+[node name="Score" type="Label" parent="Normal/Stats" index="2"]
 
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -425.0
-margin_top = -83.0
-margin_right = 424.0
-margin_bottom = 76.0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 258.0
+margin_top = 15.0
+margin_right = 408.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 150, 60 )
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 3 )
-text = "<Title 
-Forthcoming>"
+custom_fonts/font = SubResource( 23 )
+text = "Score"
+align = 2
+valign = 2
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ScoreLabel" type="Label" parent="Normal/Stats" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 412.0
+margin_right = 512.0
+margin_bottom = 90.0
+rect_min_size = Vector2( 100, 90 )
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 16 )
+text = "0"
+align = 2
+valign = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Grow Direction", "Margin", "Material", "Rect", "Size Flags", "Theme", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
+
+[node name="MessageLabel" type="Label" parent="Normal" index="1"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -424.5
+margin_top = -79.5
+margin_right = 424.5
+margin_bottom = 79.5
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 18 )
+text = "The Mental Load"
 align = 1
 valign = 1
 uppercase = true
@@ -116,64 +378,124 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Margin", "custom_fonts" ]
 
-[node name="StartButton" type="Button" parent="." index="2"]
+[node name="StartButton" type="Button" parent="Normal" index="2"]
 
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -90.0
-margin_top = -110.0
+margin_top = -88.0
 margin_right = 90.0
-margin_bottom = -26.0
 rect_pivot_offset = Vector2( 0, 0 )
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_styles/normal = SubResource( 4 )
-custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 19 )
+custom_styles/pressed = SubResource( 20 )
+custom_styles/normal = SubResource( 8 )
+custom_fonts/font = SubResource( 10 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
 text = "Start"
 flat = false
-align = 0
-_sections_unfolded = [ "custom_colors", "custom_fonts", "custom_styles" ]
+align = 1
+_sections_unfolded = [ "Rect", "Theme", "custom_colors", "custom_fonts", "custom_styles" ]
 
-[node name="MessageTimer" type="Timer" parent="." index="3"]
+[node name="MessageTimer" type="Timer" parent="." index="1"]
 
 process_mode = 1
 wait_time = 2.0
 one_shot = true
 autostart = false
 
-[node name="P2EnergyLabel" type="Label" parent="." index="4"]
+[node name="Quotes" type="Panel" parent="." index="2"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1.0
+margin_bottom = -1.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_styles/panel = SubResource( 21 )
+script = ExtResource( 5 )
+_sections_unfolded = [ "Anchor", "Margin", "Size Flags", "custom_styles" ]
+
+[node name="ContinueButton" type="Button" parent="Quotes" index="0"]
 
 anchor_left = 0.5
-anchor_top = 0.0
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.0
-margin_left = 359.0
-margin_top = 633.0
-margin_right = 410.0
-margin_bottom = 720.0
+anchor_bottom = 1.0
+margin_left = -157.0
+margin_top = -90.0
+margin_right = 157.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/hover = SubResource( 19 )
+custom_styles/pressed = SubResource( 20 )
+custom_styles/normal = SubResource( 8 )
+custom_fonts/font = SubResource( 10 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Continue"
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "Theme", "Visibility", "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="Quote" type="Label" parent="Quotes" index="1"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -476.0
+margin_top = -250.0
+margin_right = 476.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 600, 500 )
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 5 )
-text = "0"
+custom_fonts/font = SubResource( 13 )
+align = 1
+valign = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Visibility", "custom_fonts", "custom_styles" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
-[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
+[node name="QuoteTimer" type="Timer" parent="." index="3"]
+
+process_mode = 1
+wait_time = 10.0
+one_shot = false
+autostart = false
+
+[connection signal="pressed" from="Normal/StartButton" to="." method="_on_StartButton_pressed"]
 
 [connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]
+
+[connection signal="pressed" from="Quotes/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+
+[connection signal="timeout" from="QuoteTimer" to="." method="_on_QuoteTimer_timeout"]
 
 

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes.gd" type="Script" id=1]
+[ext_resource path="res://WorkScreen.tscn" type="PackedScene" id=2]
+[ext_resource path="res://HomeScreen.tscn" type="PackedScene" id=3]
+[ext_resource path="res://LunchScreen.tscn" type="PackedScene" id=4]
+
+[node name="Scenes" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+script = ExtResource( 1 )
+
+[node name="Work" parent="." index="0" instance=ExtResource( 2 )]
+
+visible = false
+
+[node name="Home" parent="." index="1" instance=ExtResource( 3 )]
+
+visible = false
+
+[node name="Lunch" parent="." index="2" instance=ExtResource( 4 )]
+
+visible = false
+
+

@@ -1,0 +1,33 @@
+
+{
+	"quotes": {
+		"one": {
+			"source": "https://www.theguardian.com/world/2017/may/26/gender-wars-household-chores-comic",
+			"quote": "The mental load means always having to remember"
+		},
+		"two": {
+			"source": "http://time.com/money/4561314/women-work-home-gender-gap/",
+			"quote": "It’s about housework, yes, but it extends to \nhaving to consider what neckline, hemline, height \nof heel, and lipstick shade is appropriate for \nthat job interview, afternoon wedding, or somber \nfuneral, instead of relying on an all-purpose suit \nit’s about thinking carefully about how to ask for \na raise in a way that sounds both assertive and \nnice; it’s about worrying whether it’s safe at \nnight and how to get home; for some of us, it \ninvolves feeling compelled to learn feminist theory \nso as to understand our own lives."
+		},
+		"three": {
+			"source": "https://www.nytimes.com/2015/02/08/opinion/sunday/sheryl-sandberg-and-adam-grant-on-women-doing-office-housework.html?_r=2",
+			"quote": "We expect men to be ambitious and results-oriented, \nand women to be nurturing and communal. When a man \noffers to help, we shower him with praise and rewards. \nBut when a woman helps, we feel less indebted. \nShe’s communal, right? She wants to be a team player. \nThe reverse is also true. When a woman declines to \nhelp a colleague, people like her less and her \ncareer suffers. But when a man says no, he faces \nno backlash. A man who doesn’t help is 'busy'; \na woman is 'selfish.'"
+		},
+
+		"four": {
+			"source": "https://www.nytimes.com/2015/02/08/opinion/sunday/sheryl-sandberg-and-adam-grant-on-women-doing-office-housework.html?_r=2",
+			"quote": "Joan C. Williams, a professor at the University of \nCalifornia Hastings College of the Law, finds that \nprofessional women in business, law and science are \nstill expected to bring cupcakes, answer phones and take\nnotes. These activities don’t just use valuable time;\nthey also cause women to miss opportunities. The person \ntaking diligent notes in the meeting almost never \nmakes the killer point."
+		},
+
+		"five": {
+			"source": "https://www.nytimes.com/2015/02/08/opinion/sunday/sheryl-sandberg-and-adam-grant-on-women-doing-office-housework.html?_r=2",
+			"quote": "Studies demonstrate that men are more likely to \ncontribute with visible behaviors — like showing up at \noptional meetings — while women engage more privately in \ntime-consuming activities like assisting others and \nmentoring colleagues. As the Simmons College management \nprofessor Joyce K. Fletcher noted, women’s communal \ncontributions tend simply to 'disappear.'"
+		},
+
+		"six": {
+			"source": "None",
+			"quote": "'All you have to do is ask me to put it back,' he \nsaid, watching me struggle. It was obvious that the \nbox was in the way, that it needed to be put back. It \nwould have been easy for him to just reach up and put it \naway, but instead he had stepped around it, willfully \nignoring it for two days. It was up to me to tell him \nthat he should put away something he got out in the \nfirst place. 'That’s the point,' I said, now in tears, \n'I don’t want to have to ask.'"
+		}
+	}
+}
+
